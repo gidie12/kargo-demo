@@ -20,7 +20,7 @@ spec:
       source:
         repoURL: https://github.com/gidie12/kargo-demo.git
         targetRevision: main
-        path: stage/{{stage}}
+        path: stages/{{stage}}
       destination:
         server: https://kubernetes.default.svc
         namespace: kargo-demo-{{stage}}
