@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dynamic-host-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: uat-web.localhost
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kargo-demo
+            port:
+              number: 80 # web.localhost goes here
