@@ -14,3 +14,9 @@ patches:
     - op: replace
       path: /spec/ports/0/nodePort
       value: 30083
+
+# Kargo will look for the 'name' matching your imageRepo variable 
+# and automatically replace 'newTag' with the fresh Freight tag on every promotion.
+images:
+  - name: public.ecr.aws/nginx/nginx
+    newTag: placeholder
