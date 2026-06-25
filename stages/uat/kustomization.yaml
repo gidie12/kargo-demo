@@ -1,11 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
 resources:
 - ../../base
 - configmap.yaml
 - ingress.yaml
-
 patches:
 - target:
     kind: Service
@@ -18,4 +16,4 @@ patches:
 # and automatically replace 'newTag' with the fresh Freight tag on every promotion.
 images:
 - name: public.ecr.aws/nginx/nginx
-  newTag: 1.31.1
+  newTag: 1.31.2
