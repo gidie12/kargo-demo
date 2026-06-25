@@ -18,4 +18,4 @@ patches:
 # and automatically replace 'newTag' with the fresh Freight tag on every promotion.
 images:
 - name: public.ecr.aws/nginx/nginx
-  newTag: placeholder
+  newTag: 1.31.1
