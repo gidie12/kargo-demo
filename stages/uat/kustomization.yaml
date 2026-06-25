@@ -17,5 +17,5 @@ patches:
 # Kargo will look for the 'name' matching your imageRepo variable 
 # and automatically replace 'newTag' with the fresh Freight tag on every promotion.
 images:
-  - name: public.ecr.aws/nginx/nginx
-    newTag: placeholder
+- name: public.ecr.aws/nginx/nginx
+  newTag: placeholder
