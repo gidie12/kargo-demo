@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: nginx 
-        image: public.ecr.aws/nginx/nginx:1.27
+        # Crucial: This image string must match the name targeted in your kustomization.yaml
+        image: public.ecr.aws/nginx/nginx
         volumeMounts:
         - name: content
           mountPath: /usr/share/nginx/html
